@@ -28,7 +28,7 @@ shell.Run "shutdown.exe /l"
 End If
 stupid="WRONG PASSWORD!"
 End If
-Loop Until user="06052004@si"
+          Loop Until user="06052004@si" 'CHANGE THE PASSWORD
 Set file1=fso.OpenTextFile(path&"POOP.txt",2)
 file1.WriteLine("OK")
 file1.Close
